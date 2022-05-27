@@ -11,6 +11,7 @@ import { NewpassComponent } from './modules/authentication/newpass/newpass.compo
 import { MyaccountComponent } from './modules/authentication/myaccount/myaccount.component';
 import { HomeComponent } from './modules/home/home.component';
 import { DeskmenuComponent } from './modules/menu/deskmenu/deskmenu.component';
+import { MobilemenuComponent } from './modules/menu/mobilemenu/mobilemenu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DeskmenuComponent } from './modules/menu/deskmenu/deskmenu.component';
     NewpassComponent,
     MyaccountComponent,
     HomeComponent,
-    DeskmenuComponent
+    DeskmenuComponent,
+    MobilemenuComponent
   ],
   imports: [
     BrowserModule,

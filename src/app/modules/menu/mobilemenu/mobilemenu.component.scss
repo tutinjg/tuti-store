@@ -1,0 +1,43 @@
+.mobile-menu {
+  padding: 24px;
+  align-items: center;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  display: inline-block;
+}
+
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+
+.mobile-menu .email {
+  font-size: var(--sm);
+  font-weight: 300;
+}
+
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--verey-light-pink);
+}
+
+ul li .sign-out {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+}
+
+.mobile-menu ul:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 640px) {
+}

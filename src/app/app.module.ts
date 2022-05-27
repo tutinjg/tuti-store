@@ -9,6 +9,8 @@ import { SignupComponent } from './modules/authentication/signup/signup.componen
 import { SigninComponent } from './modules/authentication/signin/signin.component';
 import { NewpassComponent } from './modules/authentication/newpass/newpass.component';
 import { MyaccountComponent } from './modules/authentication/myaccount/myaccount.component';
+import { HomeComponent } from './modules/home/home.component';
+import { DeskmenuComponent } from './modules/menu/deskmenu/deskmenu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MyaccountComponent } from './modules/authentication/myaccount/myaccount
     SignupComponent,
     SigninComponent,
     NewpassComponent,
-    MyaccountComponent
+    MyaccountComponent,
+    HomeComponent,
+    DeskmenuComponent
   ],
   imports: [
     BrowserModule,

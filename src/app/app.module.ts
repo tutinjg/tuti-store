@@ -12,6 +12,7 @@ import { MyaccountComponent } from './modules/authentication/myaccount/myaccount
 import { HomeComponent } from './modules/home/home.component';
 import { DeskmenuComponent } from './modules/menu/deskmenu/deskmenu.component';
 import { MobilemenuComponent } from './modules/menu/mobilemenu/mobilemenu.component';
+import { MyorderComponent } from './modules/myorder/myorder.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MobilemenuComponent } from './modules/menu/mobilemenu/mobilemenu.compon
     MyaccountComponent,
     HomeComponent,
     DeskmenuComponent,
-    MobilemenuComponent
+    MobilemenuComponent,
+    MyorderComponent
   ],
   imports: [
     BrowserModule,

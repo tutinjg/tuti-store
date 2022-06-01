@@ -13,6 +13,10 @@ import { HomeComponent } from './modules/home/home.component';
 import { DeskmenuComponent } from './modules/menu/deskmenu/deskmenu.component';
 import { MobilemenuComponent } from './modules/menu/mobilemenu/mobilemenu.component';
 import { MyorderComponent } from './modules/myorder/myorder.component';
+import { OrdersComponent } from './modules/orders/orders.component';
+import { NavbarComponent } from './modules/menu/navbar/navbar.component';
+import { ProdetailComponent } from './modules/products/prodetail/prodetail.component';
+import { CheckoutComponent } from './modules/myorder/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { MyorderComponent } from './modules/myorder/myorder.component';
     HomeComponent,
     DeskmenuComponent,
     MobilemenuComponent,
-    MyorderComponent
+    MyorderComponent,
+    OrdersComponent,
+    NavbarComponent,
+    ProdetailComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

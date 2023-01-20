@@ -17,6 +17,7 @@ import { OrdersComponent } from './modules/orders/orders.component';
 import { NavbarComponent } from './modules/menu/navbar/navbar.component';
 import { ProdetailComponent } from './modules/products/prodetail/prodetail.component';
 import { CheckoutComponent } from './modules/myorder/checkout/checkout.component';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CheckoutComponent } from './modules/myorder/checkout/checkout.component
     OrdersComponent,
     NavbarComponent,
     ProdetailComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

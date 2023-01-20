@@ -3,10 +3,19 @@
   --black: #000000;
   --verey-light-pink: #C7C7C7;
   --text-input-field: #f8f9fa;
-  --hospital-green: #ACD9B2;
+  --hard-pink: #ff5080;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,8 +24,10 @@ body {
 }
 
 nav {
+  list-style: none;
   display: flex;
-  /* width: 100%; */
+  align-items: center;
+  width: 100%;
   justify-content: space-between;
   padding: 0 24px;
   border-bottom: 1px solid var(--verey-light-pink);
@@ -26,8 +37,20 @@ nav {
   display: none;
 }
 
-.logo {
-  width: 100px;
+.header_button {
+  display: none;
+}
+
+.navbar-left, 
+.navbar-left a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .navbar-left ul,
@@ -40,10 +63,6 @@ nav {
   height: 60px;
 }
 
-.navbar-left {
-  display: flex;
-}
-
 .navbar-left ul {
   margin-left: 12px;
 }
@@ -54,13 +73,19 @@ nav {
   color: var(--verey-light-pink);
   border: 1px solid var(--white);
   padding: 8px;
+  margin: 0 5px;
   border-radius: 8px;
+  font-weight: 400;
+  transition: .5s;
 }
 
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-  color: var(--hospital-green);
-  border: 1px solid var(--hospital-green);
+  color: var(--hard-pink);
+}
+
+.navbar-right {
+  display: flex;
 }
 
 .navbar-email {
@@ -69,29 +94,23 @@ nav {
   margin-right: 12px;
 }
 
-.navbar-shopping-cart{
-  position: relative;
-}
-
-.navbar-shopping-cart div {
-  width: 16px;
-  height: 16px;
-  background-color: var(--hospital-green);
-  border-radius: 50%;
-  font-size: var(--sm);
-  font-weight: bold;
-  position: absolute;
-  top: -6px;
-  right: -3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// NAV BAR - RESPONSIVE DESIGN
 
 @media (max-width: 640px) {
   .menu {
       display: block;
   }
+
+  .header_button {
+    width: 46px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    border: 0;
+    color: var(--verey-light-pink);
+    background-color: var(--white);
+  }
+
   .navbar-left ul {
       display: none;
   }

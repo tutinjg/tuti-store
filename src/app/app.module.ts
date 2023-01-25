@@ -19,6 +19,9 @@ import { ProdetailComponent } from './modules/products/prodetail/prodetail.compo
 import { CheckoutComponent } from './modules/myorder/checkout/checkout.component';
 import { FooterComponent } from './modules/footer/footer.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +43,9 @@ import { FooterComponent } from './modules/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

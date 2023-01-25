@@ -10,30 +10,14 @@
 </head>
 <body>
     <nav>
-        <!-- <div class="menu" (click)="responsiveMenu()" href="http://localhost:53831/menu/mobile"> -->
-            <!-- <a href="http://localhost:53831/menu/mobile"> -->
-                <!-- <i class="fa-solid fa-bars"></i> -->
-            <!-- </a> -->
-        <!-- </div> -->       
-                <!-- ORIGINAL  -->
-        <!-- <a href="http://localhost:53831/menu/mobile"><img src="../../../../assets/images/icon_menu.svg" alt="menu" class="menu"></a>  -->
-        <button (click)="setActive()" class="header_button" >
-            <a class="menu_responsive" [ngClass]="{'menu_responsive--activo' : active }">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-        </button>
+            <a class="menu_responsive" routerLink="/menu/mobile">
+            <i class="fa-solid fa-bars"></i></a>
 
-            <!-- href="http://localhost:53831/menu/mobile" -->
-            <!-- <img src="../../../../assets/images/icon_menu.svg" alt="menu" class="menu"> -->
- 
+
+
             <div id="nav" class="navbar-left">
-               <a href="http://localhost:53831/"><img src="../../../../assets/images/logo_unicorn.jpeg" alt="logo" class="logo"></a>
+               <a routerLink="/"><img src="../../../../assets/images/logo_unicorn.jpeg" alt="logo" class="logo"></a>
                 <ul id="links">
-                    <!-- <li><a href="#libros" class="seleccionado" (click)="seleccionar(this)">LIBROS</a></li>
-                    <li><a href="#cds" (click)="seleccionar(this)">CDS</a></li>
-                    <li><a href="#peliculas" (click)="seleccionar(this)">PELÍCULAS</a></li>
-                    <li><a href="#juguetes" (click)="seleccionar(this)">JUGUETES</a></li>
-                    <li><a href="#otros" (click)="seleccionar(this)">OTROS</a></li> -->
                     <li><a href="#libros" class="seleccionado">LIBROS</a></li>
                     <li><a href="#cds">CDS</a></li>
                     <li><a href="#peliculas">PELÍCULAS</a></li>
@@ -45,14 +29,14 @@
             <div class="navbar-right">
                 <ul>
                     <li class="navbar-email">
-                        <a href="http://localhost:53831/acount">natijago@gmail.com</a>
+                        <a routerLink="/acount">natijago@gmail.com</a>
                     </li>
                     <li class="navbar-shopping-cart">
-                        <a href="http://localhost:53831/myorder"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a routerLink="/myorder"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                 </ul>
-
             </div>
-  </nav>
+    </nav>
 </body>
 </html>
+        

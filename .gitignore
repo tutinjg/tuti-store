@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+
+
 # Compiled output
 /dist
 /tmp

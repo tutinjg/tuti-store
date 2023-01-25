@@ -19,6 +19,8 @@ html {
 }
 
 body {
+  height: 61px;
+  width: 100%;
   margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
@@ -33,7 +35,7 @@ nav {
   border-bottom: 1px solid var(--verey-light-pink);
 }
 
-.menu {
+.menu_responsive {
   display: none;
 }
 
@@ -101,7 +103,7 @@ nav {
       display: block;
   }
 
-  .header_button {
+  .menu_responsive {
     width: 46px;
     height: 20px;
     display: block;

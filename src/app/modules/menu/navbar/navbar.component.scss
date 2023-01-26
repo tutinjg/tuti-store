@@ -81,6 +81,10 @@ nav {
   transition: .5s;
 }
 
+.navbar-right ul li a {
+  font-size: 20px;
+}
+
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
   color: var(--hard-pink);
@@ -90,11 +94,7 @@ nav {
   display: flex;
 }
 
-.navbar-email {
-  color: var(--verey-light-pink);
-  font-size: var(--sm);
-  margin-right: 12px;
-}
+
 
 // NAV BAR - RESPONSIVE DESIGN
 

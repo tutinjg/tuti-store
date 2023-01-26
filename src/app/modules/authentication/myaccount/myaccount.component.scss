@@ -1,6 +1,6 @@
 .login {
   width: 100%;
-  height: 100vh;
+  height: 74.5vh;
   display: grid;
   place-items: center;
 }
@@ -13,8 +13,8 @@
 }
 
 .logo {
-  width: 150px;
-  margin-bottom: 48px;
+  width: 170px;
+  margin-bottom: 20px;
   justify-self: center;
   display: none;
 }
@@ -57,15 +57,20 @@
 }
 
 .secondary-button {
-  background-color: var(--white);
+  background-color: var(--verey-light-pink);
   border-radius: 8px;
-  border: 1px solid var(--hospital-green);
-  color: var(--hospital-green);
+  border: none;
   width: 100%;
   cursor: pointer;
   font: var(--md);
   font-weight: bold;
   height: 50px;
+}
+
+.secondary-button:hover {
+  background-color: var(--hard-pink);
+  border: 1px solid var(--fuccia);
+  transition: .5s;
 }
 
 @media (max-width: 640px) {

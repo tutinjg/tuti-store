@@ -48,7 +48,7 @@
 
 .input {
   background-color: var(--text-input-field);
-  border: none;
+  border: solid 1px var(--verey-light-pink);
   border-radius: 8px;
   height: 30px;
   font-size: var(--md);
@@ -56,17 +56,21 @@
   margin-bottom: 12px;
 }
 
+.primary-button,
 .secondary-button {
   background-color: var(--verey-light-pink);
   border-radius: 8px;
   border: none;
+  color: var(--white);
   width: 100%;
   cursor: pointer;
   font: var(--md);
   font-weight: bold;
   height: 50px;
+  margin-top: 18px;
 }
 
+.primary-button:hover,
 .secondary-button:hover {
   background-color: var(--hard-pink);
   border: 1px solid var(--fuccia);
@@ -74,6 +78,11 @@
 }
 
 @media (max-width: 640px) {
+
+  .login {
+    height: 77.5vh;
+  }
+
   .logo {
     display: block;
 }

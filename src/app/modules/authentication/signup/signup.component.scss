@@ -1,6 +1,6 @@
 .login {
   width: 100%;
-  height: 100vh;
+  height: 74.5vh; 
   display: grid;
   place-items: center;
 }
@@ -13,8 +13,8 @@
 }
 
 .logo {
-  width: 150px;
-  margin-bottom: 48px;
+  width: 170px;
+  margin-bottom: 20px;
   justify-self: center;
   display: none;
 }
@@ -48,7 +48,7 @@
 
 .input {
   background-color: var(--text-input-field);
-  border: none;
+  border: solid 1px var(--verey-light-pink);
   border-radius: 8px;
   height: 30px;
   font-size: var(--md);
@@ -57,7 +57,7 @@
 }
 
 .primary-button {
-  background-color: var(--hospital-green);
+  background-color: var(--verey-light-pink);
   border-radius: 8px;
   border: none;
   color: var(--white);
@@ -66,19 +66,23 @@
   font: var(--md);
   font-weight: bold;
   height: 50px;
+  margin-top: 18px;
 }
 
+.primary-button:hover {
+  background-color: var(--hard-pink);
+  border: 1px solid var(--fuccia);
+  transition: .5s;
+}
 @media (max-width: 640px) {
+
+  .login {
+    height: 77.5vh;
+  }
+
   .logo {
     display: block;
 }
-  // .form-container{
-  //     height: 100%;
-  // }
-  // .form {
-  //     height: 100%;
-  //     justify-content: space-between;
-  // }
   .primary-button {
       margin-bottom: 36px;
   }

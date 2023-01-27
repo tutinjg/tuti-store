@@ -1,6 +1,6 @@
 .login {
   width: 100%;
-  height: 100vh;
+  height: 74.5vh;
   display: grid;
   place-items: center;
 }
@@ -13,8 +13,8 @@
 }
 
 .logo {
-  width: 150px;
-  margin-bottom: 48px;
+  width: 170px;
+  margin-bottom: 20px;
   justify-self: center;
   display: none;
 }
@@ -26,7 +26,7 @@
 }
 
 .form a {
-  color: var(--hospital-green);
+  color: var(--hard-pink);
   font-size: var(--sm);
   text-align: center;
   text-decoration: none;
@@ -41,7 +41,7 @@
 
 .input {
   background-color: var(--text-input-field);
-  border: none;
+  border: solid 1px var(--verey-light-pink);
   border-radius: 8px;
   height: 30px;
   font-size: var(--md);
@@ -54,19 +54,25 @@
 }
 
 .secundary-button {
-  background-color: var(--white);
+  background-color: var(--verey-light-pink);
   border-radius: 8px;
-  border: 1px solid var(--hospital-green);
-  color: var(--hospital-green);
-  width: 100%;
+  border: none;
+  color: var(--white);
+  width: 50%;
   cursor: pointer;
   font: var(--md);
   font-weight: bold;
   height: 50px;
 }
 
+.secundary-button:hover {
+  background-color: var(--hard-pink);
+  border: 1px solid var(--fuccia);
+  transition: .5s;
+}
+
 .primary-button {
-  background-color: var(--hospital-green);
+  background-color: var(--verey-light-pink);
   border-radius: 8px;
   border: none;
   color: var(--white);
@@ -77,17 +83,23 @@
   height: 50px;
 }
 
+.primary-button:hover {
+  background-color: var(--hard-pink);
+  border: 1px solid var(--fuccia);
+  transition: .5s;
+}
+
 .login-button {
   margin-top: 14px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 640px) {
+  .login {
+    height: 77.5vh;
+  }
+
   .logo {
       display: block;
-  }
-  .secundary-button {
-      position: relative;
-      top: 100px;
   }
 }
